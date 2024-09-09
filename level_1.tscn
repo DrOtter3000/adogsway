@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://v2vwc3xhchrm"]
+
+[ext_resource type="Texture2D" uid="uid://do0x1nem4mixa" path="res://Bush.png" id="1_5a6t4"]
+[ext_resource type="PackedScene" uid="uid://colanb88fptd3" path="res://player.tscn" id="2_jorfy"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1154.0
+offset_bottom = 654.0
+texture = ExtResource("1_5a6t4")
+stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_jorfy")]

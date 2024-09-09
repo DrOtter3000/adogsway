@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://colanb88fptd3"]
+
+[ext_resource type="Texture2D" uid="uid://b8pcw4dw2aywg" path="res://zazaopen.png" id="1_ju48n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xdhxc"]
+radius = 22.0227
+
+[node name="Player" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_ju48n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CircleShape2D_xdhxc")
